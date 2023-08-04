@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/html_92_BestStepInUa/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yacht Adventures</title>
+    <!-- Modern Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <script type="module" crossorigin src="/html_92_BestStepInUa/assets/index-2dd9fe4b.js"></script>
+    <link rel="stylesheet" href="/html_92_BestStepInUa/assets/index-bb44a0a2.css">
+  </head>
+
+  <body>
+    <!-- Loads the specified .html file -->
+    <!-- Header loading -->
+    <header class="header-page">
+  <div class="container">
+    <div class="header-container">
+      <a class="header-logo link" href="./index.html">
+        <img class="logo-settings" src="/html_92_BestStepInUa/assets/logo-8a30e05b.svg" alt="Logo" width="18" height="18" />
+        <p class="logo-text">Yacht Adventures</p>
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list list">
+          <li class="header-nav-list-item"><a class="header-nav-list-item-link link" href="#about">About</a></li>
+          <li class="header-nav-list-item"><a class="header-nav-list-item-link link" href="#yachts">Yachts</a></li>
+          <li class="header-nav-list-item"><a class="header-nav-list-item-link link" href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="header-burger" width="24" height="24">
+          <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <main>
+      <!-- Hero section loading -->
+      <section class="hero section">
+  <div class="hero-container container">
+    <div class="hero-block">
+      <h1 class="hero-title">Explore the High Seas with <span class="span-title">Our Luxury Yacht </span>Rentals</h1>
+      <p class="hero-text"
+        >Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and
+        embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.</p
+      >
+      <div class="btn-block">
+        <ul class="btn-block-list list">
+          <li class="btn-block-item"><button class="btn accent-btn" type="button">Get start</button></li>
+          <li class="btn-block-item"><a class="btn primery-btn" href="./index.html#services">Explore</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-set">
+      <div class="card-client">
+        <ul class="card-list list">
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="/html_92_BestStepInUa/assets/img-1_mobile@1x-454be2cd.jpg 1x, /html_92_BestStepInUa/assets/img-1_mobile@2x-9e3d6c7b.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/html_92_BestStepInUa/assets/img-1_mobile@1x-454be2cd.jpg 1x, /html_92_BestStepInUa/assets/img-1_mobile@1x-454be2cd.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img class="client-img img1" src="/html_92_BestStepInUa/assets/img-1_mobile@1x-454be2cd.jpg" alt="Portrait of the client" />
+            </picture>
+          </li>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="/html_92_BestStepInUa/assets/img-2_mobile@1x-1650fa26.jpg 1x, /html_92_BestStepInUa/assets/img-2_mobile@2x-f1739371.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/html_92_BestStepInUa/assets/img-2_mobile@1x-1650fa26.jpg 1x, /html_92_BestStepInUa/assets/img-2_mobile@1x-1650fa26.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img class="client-img img2" src="/html_92_BestStepInUa/assets/img-2_mobile@1x-1650fa26.jpg" alt="Portrait of the client" />
+            </picture>
+          </li>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="data:image/jpeg;base64,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 1x, /html_92_BestStepInUa/assets/img-3_mobile@2x-b62a4d32.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x"
+                media="(min-width: 768px)"
+              />
+              <img class="client-img img3" src="data:image/jpeg;base64,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" alt="Portrait of the client" />
+            </picture>
+          </li>
+        </ul>
+        <p class="text-clients">OUR CLIENTS</p>
+      </div>
+      <picture>
+        <source
+          srcset="/html_92_BestStepInUa/assets/img-4_mobile@1x-24752873.png 1x, /html_92_BestStepInUa/assets/img-4_mobile@2x-54767a88.png 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/html_92_BestStepInUa/assets/img-4_tablet@1x-a7d673e9.png 1x, /html_92_BestStepInUa/assets/img-4_tablet@1x-a7d673e9.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img class="card-img" src="/html_92_BestStepInUa/assets/img-4_tablet@1x-a7d673e9.png" alt="Yacht" />
+      </picture>
+      <ul class="text-list">
+        <li class="text-item">
+          <p class="price">&#36;12M</p>
+        </li>
+        <li class="text-item">
+          <p class="add-text">Book now and make your dream yacht rental a reality</p>
+        </li>
+      </ul>
+      <picture>
+        <source
+          srcset="/html_92_BestStepInUa/assets/img-5_mobile@1x-ab43b187.jpg 1x, /html_92_BestStepInUa/assets/img-5_mobile@2x-130b5b28.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/html_92_BestStepInUa/assets/img-5_tablet@1x-a0a8fd4a.jpg 1x, /html_92_BestStepInUa/assets/img-5_tablet@1x-a0a8fd4a.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img class="owner-img" src="/html_92_BestStepInUa/assets/img-5_tablet@1x-a0a8fd4a.jpg" alt="The owner of the yacht" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <!-- About section loading -->
+      <section class="about-section" id="about">
+  <div class="about container">
+    <div class="about-box-text">
+      <div class="about-yacht">
+        <p class="about-yacht-text"
+          ><span class="about-yacht-text-span">Yacht Adventures</span> fleet is here to take you on the ultimate
+          adventure. Each yacht is hand-picked for its comfort, style, and performance.</p
+        >
+      </div>
+      <ul class="about-list">
+        <li class="about-item"
+          >From spacious decks to state-of-the-art technology, our yachts are designed to provide the perfect blend of
+          luxury and functionality. Take a look at our selection below and choose the yacht that matches your needs and
+          preferences.
+        </li>
+        <li class="about-item">
+          No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable.
+          Book now and get ready for an unforgettable adventure on the high seas.
+        </li>
+      </ul>
+      <ul class="about-images">
+        <li class="about-yacht-one">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/yahtone1x@desk-9a16bd65.png 1x, /html_92_BestStepInUa/assets/yahtone2x@desk-aca349a7.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/yahtone1x@tab-eee7034a.png 1x, /html_92_BestStepInUa/assets/yahtone2x@tab-fbc25ec1.png 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/html_92_BestStepInUa/assets/yahtone1x@mob-0f91c302.png 1x, /html_92_BestStepInUa/assets/yahtone2x@mob-13cd392a.png 2x"
+            />
+            <img src="/html_92_BestStepInUa/assets/yahtone1x@mob-0f91c302.png" alt="yacht" />
+          </picture>
+        </li>
+        <li class="about-yacht-two">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/yahttwo1x@desktab-0f72b525.png 1x, /html_92_BestStepInUa/assets/yahttwo2x@desktab-9f813e1a.png 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/html_92_BestStepInUa/assets/yahttwo1x@mob-0f9b4716.png 1x, /html_92_BestStepInUa/assets/yahttwo2x@mob-0ad6d780.png 2x"
+            />
+            <img src="/html_92_BestStepInUa/assets/yahttwo1x@mob-0f9b4716.png" alt="yacht" />
+          </picture>
+        </li>
+        <li class="about-yacht-three">
+          <img
+            srcset="/html_92_BestStepInUa/assets/yahtthree1x@desktabmob-c25ae8f0.png 1x, /html_92_BestStepInUa/assets/yahtthree2x@desktabmob-fab7f812.png 2x"
+            src="/html_92_BestStepInUa/assets/yahtthree1x@desktabmob-c25ae8f0.png"
+            alt="computer monitor"
+            width="260"
+            height="244"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Yahts section loading -->
+      <!-- Yaht_block -->
+<section class="section" id="yachts">
+  <div class="yb-container container">
+    <img class="curved-lines-bg" src="/html_92_BestStepInUa/assets/grouplines-c11d1c78.svg" alt="Curved lines" />
+    <div class="yb-main-info">
+      <h2 class="yb-title"> Choose your dream yacht and sail away into the sunset </h2>
+      <form action="#rent" class="form-yb-button">
+        <button class="yb-button btn" type="submit">Yacht rental</button>
+      </form>
+    </div>
+    <div class="swipe-block">
+      <button type="button" class="yb-swipe-btn-left btn">
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <div class="yaht-choice">
+        <div class="yb-card card-1">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/desk_arrow@1x-457bf665.png 1x, /html_92_BestStepInUa/assets/desk_arrow@2x-c703341e.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/tab_arrow@1x-dee98a03.png 1x, /html_92_BestStepInUa/assets/tab_arrow@2x-8c4f36d6.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767.98px)"
+              srcset="/html_92_BestStepInUa/assets/mob_arrow@1x-5cb6b77c.png 1x, /html_92_BestStepInUa/assets/mob_arrow@2x-1aa76ca2.png 2x"
+              type="image/png"
+            />
+            <img class="yb-img img" src="/html_92_BestStepInUa/assets/mob_arrow@1x-5cb6b77c.png" alt="Arrow yaht" loading="lazy" />
+          </picture>
+          <div class="yaht-info">
+            <span class="yaht-name">Arrow</span>
+            <span class="yaht-class">LUXURY YAHTS</span>
+          </div>
+          <div class="yaht-characteristics">
+            <ul class="yb-list list">
+              <li class="yaht-item">LENGTH</li>
+              <li class="yaht-item">BUILDER</li>
+              <li class="yaht-item">BUILT</li>
+              <li class="yaht-item">GUESTS</li>
+              <li class="yaht-item">PRICE</li>
+            </ul>
+            <ul class="yb-list list">
+              <li class="yaht-item-description">48m(155ft)</li>
+              <li class="yaht-item-description">Admiral</li>
+              <li class="yaht-item-description">2021</li>
+              <li class="yaht-item-description">11 in 5 cabins</li>
+              <li class="yaht-item-description">€33,500,000</li>
+            </ul>
+          </div>
+        </div>
+        <div class="yb-card card-2">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/dt_ben@1x-50edc716.png 1x, /html_92_BestStepInUa/assets/dt_ben@2x-4a9a9974.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/tab_ben@1x-49ca150c.png 1x, /html_92_BestStepInUa/assets/tab_ben@2x-b7722301.png 2x"
+              type="image/png"
+            />
+
+            <img class="yb-img img" src="/html_92_BestStepInUa/assets/tab_ben@1x-49ca150c.png" alt="Arrow yaht" loading="lazy" />
+          </picture>
+          <div class="yaht-info">
+            <span class="yaht-name">BENETTI OASIS 40M BO122</span>
+            <span class="yaht-class">LUXURY YAHTS</span>
+          </div>
+          <div class="yaht-characteristics">
+            <ul class="yb-list list">
+              <li class="yaht-item">LENGTH</li>
+              <li class="yaht-item">BUILDER</li>
+              <li class="yaht-item">BUILT</li>
+              <li class="yaht-item">GUESTS</li>
+              <li class="yaht-item">PRICE</li>
+            </ul>
+            <ul class="yb-list list">
+              <li class="yaht-item-description">41m (133ft)</li>
+              <li class="yaht-item-description">Benetti</li>
+              <li class="yaht-item-description">2025</li>
+              <li class="yaht-item-description">10 in 5 cabins</li>
+              <li class="yaht-item-description">€23,210,000</li>
+            </ul>
+          </div>
+        </div>
+        <div class="yb-card card-3">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/dt_anna@1x-1ab1485f.png 1x, /html_92_BestStepInUa/assets/dt_anna@2x-a609d080.png 2x"
+              type="image/png"
+            />
+
+            <img class="yb-img img" src="/html_92_BestStepInUa/assets/dt_anna@1x-1ab1485f.png" alt="Arrow yaht" loading="lazy" />
+          </picture>
+          <div class="yaht-info">
+            <span class="yaht-name">BELLE ANNA</span>
+            <span class="yaht-class">LUXURY YAHTS</span>
+          </div>
+          <div class="yaht-characteristics">
+            <ul class="yb-list list">
+              <li class="yaht-item">LENGTH</li>
+              <li class="yaht-item">BUILDER</li>
+              <li class="yaht-item">BUILT</li>
+              <li class="yaht-item">GUESTS</li>
+              <li class="yaht-item">PRICE</li>
+            </ul>
+            <ul class="yb-list list">
+              <li class="yaht-item-description">50m(155ft)</li>
+              <li class="yaht-item-description">ISA</li>
+              <li class="yaht-item-description">2012</li>
+              <li class="yaht-item-description">12 in 6 cabins</li>
+              <li class="yaht-item-description">€21,000,000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="yb-swipe-btn-right btn">
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="swipe-wrapper">
+      <button type="button" class="yb-swipe-btn btn">
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="yb-swipe-btn btn">
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+      <!-- Services section loading -->
+      <section class="services section" id="services">
+  <div class="services-container container">
+    <ul class="services-list">
+      <!-- 1 -->
+      <li class="services-item item1">
+        <div class="services-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/img-1_desk@1x-78dcdcaa.webp 1x, /html_92_BestStepInUa/assets/img-1_desk@2x-8dd028ae.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/img-1_tab@1x-9a78779a.webp 1x, /html_92_BestStepInUa/assets/img-1_tab@2x-9fe9aeeb.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/html_92_BestStepInUa/assets/img-1_mob@1x-b5fdeda7.webp 1x, /html_92_BestStepInUa/assets/img-1_mob@2x-290e22d4.webp 2x"
+              type="image/webp"
+            />
+            <img src="./img/services/img-1.webp" alt="A man in a diving mask and fins swims in shallow water" />
+          </picture>
+          <div class="services-overlay"></div>
+          <form action="#">
+            <button class="services-caption" type="submit">Diving</button>
+          </form>
+        </div>
+      </li>
+
+      <!-- 2 -->
+      <li class="services-item item2">
+        <div class="services-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/img-2_desk@1x-53273480.webp 1x, /html_92_BestStepInUa/assets/img-2_desk@2x-bc3f5831.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/img-2_tab@1x-3a4d0556.webp 1x, /html_92_BestStepInUa/assets/img-2_tab@2x-0d2d12f5.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/html_92_BestStepInUa/assets/img-2_mob@1x-7891e371.webp 1x, /html_92_BestStepInUa/assets/img-2_mob@2x-6e882d94.webp 2x"
+              type="image/webp"
+            />
+            <img src="./img/services/img-2.webp" alt="Fishing rod, which is used to catch fish" />
+          </picture>
+          <div class="services-overlay"></div>
+          <form action="#">
+            <button class="services-caption" type="submit">Fishing</button>
+          </form>
+        </div>
+      </li>
+
+      <!-- 3 -->
+      <li class="services-item item3">
+        <div class="services-picture">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/html_92_BestStepInUa/assets/img-3_desk@1x-ba3e8350.webp 1x, /html_92_BestStepInUa/assets/img-3_desk@2x-4286ef6a.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/html_92_BestStepInUa/assets/img-3_tab@1x-89daa64f.webp 1x, /html_92_BestStepInUa/assets/img-3_tab@2x-36d9b8bf.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/html_92_BestStepInUa/assets/img-3_mob@1x-6cdca156.webp 1x, /html_92_BestStepInUa/assets/img-3_mob@2x-479f8416.webp 2x"
+              type="image/webp"
+            />
+            <img src="./img/services/img-3.webp" alt="Beach umbrellas" />
+          </picture>
+          <div class="services-overlay"></div>
+          <form action="#">
+            <button class="services-caption" type="submit">Sunbathing</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- Rent section loading -->
+      <section class="rent-yacht-section" id="rent">
+  <div class="rent-yacht-block container">
+    <!-- Image  -->
+    <div class="rent-yacht-image">
+      <h3 class="rent-yacht-heading">Rent a yacht now</h3>
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="/html_92_BestStepInUa/assets/img-rent-yacht@1x-a8330835.png 1x, /html_92_BestStepInUa/assets/img-rent-yacht@2x-a74d00f7.png 2x"
+        />
+        <source
+          media="(max-width:767px)"
+          srcset="/html_92_BestStepInUa/assets/img-rent-yacht-mobile@1x-8700a5c9.png 1x, /html_92_BestStepInUa/assets/img-rent-yacht-mobile@2x-e10e4062.png 2x"
+        />
+        <img src="/html_92_BestStepInUa/assets/img-rent-yacht@1x-a8330835.png" alt="Rent a yacht now" class="rent-yacht-image" />
+      </picture>
+    </div>
+    <!-- Form  -->
+    <div class="rent-yacht-form-container" id="rent-form">
+      <form class="rent-yacht-form" id="rent-yacht-form">
+        <div class="rent-yacht-form-container">
+          <label for="user-name" class="rent-yacht-input-label"></label>
+          <div class="rent-yacht-input-container">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="user-name"
+              id="user-name"
+              class="rent-yacht-input"
+              required
+            />
+          </div>
+        </div>
+        <div class="rent-yacht-form-container">
+          <label for="user-email" class="rent-yacht-input-label"></label>
+          <div class="rent-yacht-input-container">
+            <input
+              type="email"
+              placeholder="Email"
+              class="rent-yacht-input"
+              name="user-email"
+              id="user-email"
+              required
+            />
+          </div>
+        </div>
+        <div class="rent-yacht-form-container">
+          <label for="user-phone" class="rent-yacht-input-label"></label>
+          <div class="rent-yacht-input-container">
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="rent-yacht-input"
+              name="user-phone"
+              id="user-phone"
+              required
+            />
+          </div>
+        </div>
+        <div class="rent-yacht-textarea-container">
+          <label for="user-comment" class="rent-yacht-input-label"></label>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+            placeholder="Comment"
+            class="rent-yacht-textarea"
+            required
+          ></textarea>
+        </div>
+        <button class="rent-yacht-send-button" type="submit" data-modal-open>
+          Send<svg class="send-arrows-icon" width="18" height="8">
+            <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+        <audio id="clickSound">
+          <source src="/html_92_BestStepInUa/assets/welcome-6d563bf6.mp3" type="audio/mpeg" />
+        </audio>
+      </form>
+    </div>
+    <!-- Modal window  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="icon-modal" width="24" height="24">
+            <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <picture>
+          <source media="(min-width:768px)" srcset="/html_92_BestStepInUa/assets/img-modal@1x-4c8d4de0.png 1x, /html_92_BestStepInUa/assets/img-modal@2x-b2bbce45.png 2x" />
+          <source
+            media="(max-width:767px)"
+            srcset="/html_92_BestStepInUa/assets/img-modal-mobile@1x-95e01ed1.png 1x, /html_92_BestStepInUa/assets/img-modal-mobile@2x-290e0eee.png 2x"
+          />
+          <img src="/html_92_BestStepInUa/assets/img-modal@1x-4c8d4de0.png" alt="Thanks for confirming your order" class="modal-image" />
+        </picture>
+        <h3 class="modal-heading">Thank You</h3>
+        <p class="modal-p"
+          >Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in
+          touch shortly to confirm your reservation and provide any additional information or assistance you may
+          need.</p
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Reviews section loading -->
+      <section class="adventures" id="reviews">
+  <div class="adventures-container container">
+    <div class="adventures-title-container">
+      <h3 class="adventures-title">
+        <span class="adventure-title-gray">Yacht Adventures</span>
+        <span class="adventures-title-item"
+          >take pride in providing the best possible service and experience to our customers</span
+        >
+      </h3>
+      <p class="adventures-text">
+        Our customers have enjoyed unforgettable moments on our yachts. Don't just take our word for it - read on to
+        find out what they have to say about their journey with us.
+      </p>
+    </div>
+    <div class="feedback">
+      <div class="swiper">
+        <ul class="adventures-list swiper-wrapper">
+          <li class="adventures-list-item swiper-slide">
+            <picture>
+              <source
+                srcset="/html_92_BestStepInUa/assets/john_tablet@1x-02c3b8b3.png 1x, /html_92_BestStepInUa/assets/john_tablet@2x-a24edfc8.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="/html_92_BestStepInUa/assets/john-mob@1x-3106670f.png 1x, /html_92_BestStepInUa/assets/john-mob@2x-7ada2165.png 2x" />
+              <img class="img-adventures" src="/html_92_BestStepInUa/assets/john-mob@1x-3106670f.png" alt="John Wax" />
+            </picture>
+            <h4 class="adventures-list-item-title">John Wax</h4>
+            <p class="adventures-list-item-text">
+              I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The
+              yacht was spacious, comfortable, and luxurious, and the crew took care of everything.
+            </p>
+          </li>
+          <li class="adventures-list-item swiper-slide">
+            <picture>
+              <source
+                srcset="/html_92_BestStepInUa/assets/victoria_tablet@1x-8b5ab91d.png 1x, /html_92_BestStepInUa/assets/victoria_tablet@2x-a5059444.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="/html_92_BestStepInUa/assets/victoria_mob@1x-6e6b7a5a.png 1x, /html_92_BestStepInUa/assets/victoria_mob@2x-4129e174.png 2x" />
+              <img class="img-adventures" src="./img/adventures/image-mob@1x.png" alt="Victoria Romashenko" />
+            </picture>
+            <h4 class="adventures-list-item-title">Victoria Romashenko</h4>
+            <p class="adventures-list-item-text">
+              The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully
+              designed, with all the amenities we needed, and the crew was attentive and friendly.
+            </p>
+          </li>
+          <li class="adventures-list-item swiper-slide">
+            <picture>
+              <source
+                srcset="/html_92_BestStepInUa/assets/ihor_tablet@1x-6c7f9c1e.png 1x, /html_92_BestStepInUa/assets/ihor_tablet@2x-757ba383.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="data:image/png;base64,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 1x, /html_92_BestStepInUa/assets/ihor_mob@2x-c6eb8664.png 2x" />
+              <img class="img-adventures" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAAAXNSR0IArs4c6QAADjZJREFUeNq9mktsXNd5x3/nnPuY9wyHL5HiY2TLsSrbshTUrZM2jhap+9hUBrzJInCM1gGKLuIAQdEuCqttAGeV2ijQRTexm13Rug66qAu4kYzGcNL4IbmWJdmSyCEpUiQlcmY4M/fOfZ1eng48ACu5A0rpX7g65J075/z/3/f/vnPvDAX3CMvLy19NkuQ4cFxrfVxDJer5tZ7fJV+qIIRsAIukhxDinJTy7Ozs7FvcA4h7QPybKelTQCWOI1auXuLjX/yUW2srfHL+PawkojQyyrEvP8EjT/we4zM1GKCRCno9FfTK3QgS+yUfx/Fp4CR9bKwt809/9wNWLn9MHPYoujaF9PB6AffNT9No7FAYn+T4k09z9MtfYy/6GTo9Pz//6i9VxMrKyqNRFL1En3yaAYSAaxfO8aMf/CWd7S3yjqSQyzBZLTJzcBqtE4rFIs1Wm4xr0+r6PPrUt5h+4Bh3wKLjOCenp6frDAnJkKjX699OBZzDCBggtRP/+W//iJv0qBQyFPM5Ds9PMTc3y8TUJPlymUzWIYpiMrkco5Uy3esXaW8sorktakEQLKbrvcCQsPg/sLCwUBFC/HMa9ZPsQXoekORlSBjHOFJRLuaIEoFlSeKeT9RqsXCrgWUpbi57SDQLl68w/eklvvLcnXmm651eXFw8no7PHjp0qLFPEUZALSV6Bqh9zmq02x2mx0bQvZCCEkxkLcpK4SYJ8w8dxbZt3KyL1DE3ri3w8w8v0Wg0GQKnhBDHV1dXP9de1l0JAISUZCoTZOOAqWKGmckqtfsPU56YQmZLSNtFKIX2WnjbN2CiQrVaIahOMhyMvc4OhDB8TexayAgYAhMz97HT9XEdB8d1iYE4jIh7PUKvS+T7hH6PKAoIkhinWGT2Vx7FYHghr+9ae0gRpoj/GjjOEEjFMnv4CyTp2I0idDpKAUiFsB2U7SKlhRAY+GHMxnaLwugECGHePySOSylfGEKEEfBMWkzPD0HeHKApTcxgWQ4kCYkWRDj0/ICw3SLxWvjNLbpeQKxthLRRcYTl5hGDuYYSs8traWnp9z+vJkwd7HaFYQQMIHD8Nkkc0ej2OH9piTd+dgELwW9+8ShHjh7hzTff4kJ9jakD41SyDo5lkVn6mHhyFpXLw2DeXaLcGaalv5LyPJSicdtM9NNVG14AgGbjjdeYrFQp5LIQRVTGJ5k+MMGl+iqdjsetdpcH5uc4MDbO3NQo7USRbKyQNDYYYOisVFKe3/7fmRhk4ZtDCxicpZTuzGrpCqOHa8w8Mo0UAuU4XK8vUy0WOfbQgxw+fNici70dfD+kXCkjy1X2YJisGFulfF/uZwO5JwsML2CAwuGHKaSk2l2fbD7P1OwMzZ0Os5OjZFIRU+Oj5At5HFtyfW0DJTTZgzXIl9nPmnuzIRmoO7kfAQBW7Sihcon9Lptra6zXF6HdYu3GTZauXmNz5QaJ79HcapIVMes31vGrc+wbg2xUPhPRr/ga+4TK5Bh//LdYXbuB19khCXyWFxc48/bPOHPmLI31JVrrKzhJj43NTRZubKMn5kEDsO9sWJb1KIDVV3Vqf1kYYGzuPrZu3WJra4urly4SBJpJN08xzLC22mSr9Tbz8zNcvryALE+Q2oG7g+lUp4C3rIGV9i8AoFQdQyuH+pUr4BaYqowz41aplEYICKn761y8fI1PljZ54htP36lwhy/yQfC/I42v9m2lwSJBr0dldJybnZB8wWXq/nGaRY8PbnyEV+xSqBZY3WqjhEyvGx0E6e5Q2+Uvja/uUgCAm8tTPnAQ21Z0uh4bq2uEO01cGdFubtNsNvCiiHypyHjtgWGzPcx1NSuKokN7LthXlGwnwwO/8SSrF9+ns9NhnZgkiJFK0Oh2iYXEkoLJ8REK+RxoQHDXSGvrUSv9b974bd9ZGNySV8fHqZRLbG7epJv0Uvt0sZVEWRalch4phHls7bz198jaCUYePkksxLD1cec9A7gXXQKvtc3SmX/gyCMPGyEZ12WkkKWUyxAlEEeasbQWavffj1ssU80KqmOj5LM5lFLcBSrWXW44JFFE4Hsm2u7EPGU74sTjj7Py8YcUKoI4DKiECbmsQ+3Bo2RyeVSmQOnYk8SxRiDIpUK8bpdeEKDRKClheDsjgcZ+yCswhyWV6flxAnNf+l1ueRrhuOQOzOKrLE5lnMm5eQ4fe4yxqSnsyjRjT3wdnDxBECKkIOwFJpuum8FWFkpa6ESbc8PUqZVe2BymiJUU2LZDepjJhE4Ig5Ck/7FNp91B2FnuP/k0G4uXcXPLFHJrOLbDxPQBZu57gNLUHPmJWTSCwPdBSkCRcjCWchybWElAkFVZwigkDHfXSADuVDeLFnDuziGHKA4pF0vGLkkUGhFSCDTaZCCMIqSSaKDb6eD3gpTsIYrjsxw8GmFnXEqlCrlCHsfJEIWRaQJaCMw/gXk/WhuStm2TijKjlMI88rZ22iQ6vm0m0mvrFrDIHRAnEc2bGxQLJSw0lu2SxDGW4xgRKAtLSLO4VArLtnFT0l7XAxIQyhCxXdc8+SVJnL6eJY4TEwAQACYoYjcQZkqFpRUasCyLXq9He6dp7o7v4JhzAiD9fGcBqO31n1nUsdlpNJg6OINUltmZM5kMAIkGbVKNIaaThCgMiNMxDo3fSYWb81IqHNftt9M4PQQAAkEYBli2RRxHKGWZLERRZCzW7bQR0qLdbd9OxGKtVjsk+4RfZw/Mwmhy2TzlkSqN7W2kkIRBjyTBEDWhQ5ghfc1E13YzuK5LrlAkmy9gWbaJqO0Ye/R9LQaEBKRijcWkUGaeKIqxlMVOq0UmazKAkup2+9RZANnf9faKMBG2lKLnexQKRbNQ2gZNdDTaiEyj3/cyfVLCNAApLRN5S9mANjaL4xgMzLv7YjSAmZvEnCVOYuMAz/fIZrMYHpZFuu6ewh4EXwKkqTu/t9UKNJlczhRdp71DubybjS0TmZ7XNaTjKMRMbCxluhRJokFos3h/ISM46Yv+H+4CIcxr5r0CYciDMHZNrzVzm2z3RWYzmb3ZWJybm/vxZyJ2n1XTCV8CA9OF0m5iOlE2l8dJJwh6Po5jEUUhvuchTNoDQyw2BA1RQ1jHJjukETVjbMaERJvXASPGBECDuQ405pokIgwCdN9mQRCwulTn3f/4CdcXr5iWzsBKBhaDVvVy+sLz6cSVne2bXH33p+QLBWoP/yrFahXHdo3nW40GQeAjxChJvwWr9LyZXIBAfBZhEOn5AWEjEBCJBBKEoG9NDRIzmoagwLFc6h/+gu7Kp4SNNdo3N/n3q2t8/TunqYyOkRb/6b0iTDbq9fpLoE+//dqrHCor7JT88sZFctMPUjl0nJGpg+R0QmNp03hcWZIw7CFs12RGANocycBChpQy5+lHXhMjMAr6IhPQwnQ2v7lFnJKOt1ep2JrRqovvjpGxYLLZw3LMZvvK4HNZkBgMsgGiMTFSYmK0QimfYbyYpRyss/Phv3L93TcJux0E0G41jUd1vGulyLTN2BCP+0Uf0/M8TIb6naxvq77Agb2MiDghTB3QvXAWZ6dO2QXbiItQSpPP5/jiY79OoVhaHGRhr4h+NnY/ezpQLeFKjdwtxE6buN2iaEPWu87m269h+W221leNvfrFTBInA4+b32MQmGsMeUNcQ99aGAG7R0wSReb9vfolZGsD3fMg9NOxTdDYJG60cKRkrJxHCH3aZGGviD1CfpwNGi/FXo8L75xn6XKdna0duo0GvdYOWRHiX3iH7uY6gd/DUna/k0ToOCbNgCnOWMem94dBiO91++djIpMNBgL6Ijpri8Srn+BvN0niiNbmJptXFthaXefSe+e5VV8ivH75pfn5Q6+yB4rb4M/+8LmfN2/Uf6cyNXagqxOWP7mGt9UwG9bOxiZWx2cnETiVKrlS2XjZEBODSKcETW8HbTpbSnbw8JMeCD77OWreovvev3BreRXhWtiOQxgL/isl39jaZvbIfZSrlXPHvvXiU0N/yXLoqWcbL548/lS27J4Zm5yozR48QKZSYjVdZHJmmpv1FVSryUqugJPNoVzXtGWRWEihEUogtNkfzOaXxEYAAm2iHGuNY9ugBf71y8TX3jW2K1ZyFMslttsdPv1kgUe+8iW059Habi4WS5On9vXt6Qc//NNaY3XrTLfVqVmZHOMHJog7DXKFAknLo52vkPnCrzF63xFS2xj7WLZKD6ffQpUh301JIcDdFdsvamc3q/XLdD56E8cybdm08aTngVYElsvV1AEfvf/hohuJk9/9yQf1fX17euLZ7y8S5k5MHjzwenV8lEbq00x+BBELZM7FDVtsXj5HFPhEoZeOPcwdrcDcxNmWQhlhFkrJz3ZptSssrYHt999AJgFKGBFEQBKBti0aN9dJ6+js0aOVE0bAvfge+52/+ZMX8pnMaddWRDs7qFyWKOyxvL7N3G8/g5YWSRxSKI+QKxZx3AyAeTxtbd8yn4brbpOo00AlPfyVS9gKbDdLGCVoNEJZCK+HtBS4meePfOPPX763X8Ybe71Yc/zmmSgOamB2ZfPAoh76GrmRMeLQw0lJZTOuiXC0c4uguUHQ2MCxYpQAy7JNq5VCmuj7vdA8KCllbhwRUXRWCfn8g3/wV+d/qX8W8dHf/vEzCZyO/KjW6wWIQhWVkrddGx14KB2hLNsUq7IVAvq3JYa4yVoYRabwe4FGxwFCi7NK8Rcnnvv+2f/XP1C5+MPvnkx60TNY6pS0rIpQNumIALQWaIEZkSCRgDD7hUgFk0gir9vwu97rypKvnnjue2fZJwT3CJ/+6PTJRCZf1cI6LpA1reOaFqISh7HpRmlWFr2O14iFPJcvVc/5rdb5x/7oe2fvxdr/DeMqjRU4/UGOAAAAAElFTkSuQmCC" alt="Ihor Trachuk" />
+            </picture>
+            <h4 class="adventures-list-item-title">Ihor Trachuk</h4>
+            <p class="adventures-list-item-text">
+              The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and
+              the outdoor areas were perfect for relaxing and entertaining. Worth every penny!
+            </p>
+          </li>
+        </ul>
+        <div class="swiper-button-prev visually-hidden"></div>
+        <div class="swiper-button-next visually-hidden"></div>
+        <div class="swiper-scrollbar visually-hidden"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="back-to-up" id="back-to-up">
+      <svg width="30" height="16" class="icon-arrow-up">
+        <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+    </main>
+    <!-- Footer loading -->
+    <footer class="footer section">
+  <div class="footer-container container">
+    <div class="footer-up-part">
+      <div class="footer-logo-container">
+        <img class="footer-logo" src="/html_92_BestStepInUa/assets/logo-8a30e05b.svg" alt="Yacht" width="18" height="18" />
+        <p class="footer-logo-text">Yacht adventures</p>
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-list list">
+          <li class="footer-list-item">
+            <a class="footer-list-link link" href="./index.html#about">About</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-list-link link" href="./index.html#yachts">Yachts</a>
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-list-link link" href="./index.html#reviews">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-social-media-container">
+        <p class="footer-social-media-container-title">We in social</p>
+        <ul class="footer-social-media-list list">
+          <li class="footer-social-media-list-item">
+            <a
+              class="footer-social-media-list-item-link link"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-media-list-item-link-icon" width="17.6" height="17.6">
+                <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-list-item">
+            <a
+              class="footer-social-media-list-item-link link"
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-media-list-item-link-icon" width="17.6" height="17.6">
+                <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-list-item">
+            <a
+              class="footer-social-media-list-item-link link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-media-list-item-link-icon" width="17.6" height="17.6">
+                <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-down-part">
+      <p class="footer-down-ownership">2023. Yacht Adventures</p>
+      <a class="footer-down-privacy-police" href="#">Privacy police</a>
+    </div>
+  </div>
+</footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="header-page header-container">
+    <a class="header-logo link" href="./index.html">
+      <img src="/html_92_BestStepInUa/assets/logo-8a30e05b.svg" alt="Logo" width="18" height="18" />
+      <p class="logo-text">Yacht Adventures</p>
+    </a>
+    <button class="menu-toggle js-close-menu">
+      <svg class="mbmenu-icon-x" width="24" height="24">
+        <use href="/html_92_BestStepInUa/assets/icons-ab7b2fec.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mbmenu-nav">
+    <ul class="mbmenu-nav-list list">
+      <li class="mbmenu-nav-list-item"><a class="mbmenu-nav-list-item-link link" href="#about">About</a></li>
+      <li class="mbmenu-nav-list-item"><a class="mbmenu-nav-list-item-link link" href="#yachts">Yachts</a></li>
+      <li class="mbmenu-nav-list-item"><a class="mbmenu-nav-list-item-link link" href="#reviews">Reviews</a></li>
+    </ul>
+  </nav>
+</div>
+    <!-- JS scripts -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- <script defer src="js/mobile-menu.js"></script> -->
+  </body>
+</html>
