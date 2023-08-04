@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/yacht-adventures-project-group-3/",
+    "build": "vite build --base=/html_92_BestStepInUa/",
     "preview": "vite preview"
   },
   "devDependencies": {
